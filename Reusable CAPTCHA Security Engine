@@ -78,3 +78,19 @@ public class CaptchaGenerator {
         System.out.println("Validation Result: " + generator.validateCaptcha(generator.getCaptchaString()));
     }
 }
+
+
+//JAVA SERVLETS
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.ServletException;
+import java.io.IOException;
+
+// HTML CODE
+<form method="post" action="captcha">
+    <img src="captcha" alt="CAPTCHA image">
+    <input type="text" name="captcha" placeholder="Enter CAPTCHA">
+    <button type="submit">Submit</button>
+</form>
+
